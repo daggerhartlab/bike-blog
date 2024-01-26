@@ -878,9 +878,9 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
+}
 $databases['default']['default'] = array (
   'database' => 'drupal10',
   'username' => 'drupal10',
@@ -893,4 +893,4 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_qmaNvQ1EusxS6qh9VGs9uesrKNkz5i2LzJ-yqzqOVp1cxkbZgsAWsLnCc55QA7Hnhb7qcozx0g/sync';
+$settings['config_sync_directory'] = $app_root . '/../config/default';
