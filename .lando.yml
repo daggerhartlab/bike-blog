@@ -8,9 +8,34 @@ services:
     type: phpmyadmin
     hosts:
       - database
+  node:
+    type: node:18
+    globals:
+      grunt-cli: "latest"
 
 proxy:
   appserver:
     - bikeblog.lndo.site
   pma:
     - bikeblog-db.lndo.site
+
+tooling:
+  npm:
+    service: node
+  npx:
+    service: node
+  node:
+    service: node
+  theme-install:
+    service: node
+    cmd:
+      - cd /app/web/themes/custom/paintjob && npm ci
+
+  theme-build:
+    service: node
+    cmd:
+      - cd /app/web/themes/custom/paintjob && npx mix --production
+
+  theme-watch:
+    service: node
+    cmd: cd /app/web/themes/custom/paintjob && npx mix watch
