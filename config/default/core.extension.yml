@@ -47,4 +47,5 @@ module:
 theme:
   olivero: 0
   claro: 0
+  trainer: 0
 profile: standard

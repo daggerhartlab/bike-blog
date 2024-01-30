@@ -1,0 +1,22 @@
+uuid: 0ecd8aee-7def-4d90-9b36-0e570071349f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - trainer
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: trainer_primary_local_tasks
+theme: trainer
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }
