@@ -1,0 +1,29 @@
+uuid: bedd7e29-7251-4c6b-b1ff-811a58130808
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_splash_image
+    - media.type.photo
+    - node.type.landing_page
+id: node.landing_page.field_splash_image
+field_name: field_splash_image
+entity_type: node
+bundle: landing_page
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      photo: photo
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

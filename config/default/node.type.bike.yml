@@ -1,0 +1,18 @@
+uuid: c7e129ef-7bb7-4b42-b214-25cdd1a58a5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Bike
+type: bike
+description: 'Bike content, specifically describing models of bikes with media and descriptions'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

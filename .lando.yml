@@ -1,4 +1,4 @@
-name: trainer
+name: bikeblog
 recipe: drupal10
 config:
   webroot: web
@@ -11,6 +11,6 @@ services:
 
 proxy:
   appserver:
-    - trainer.lndo.site
+    - bikeblog.lndo.site
   pma:
-    - trainer-db.lndo.site
+    - bikeblog-db.lndo.site

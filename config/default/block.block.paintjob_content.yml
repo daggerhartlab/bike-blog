@@ -1,0 +1,22 @@
+uuid: b37b8176-0a0d-452a-b01b-17a7a6b07ccb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - paintjob
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: paintjob_content
+theme: paintjob
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

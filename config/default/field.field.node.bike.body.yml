@@ -1,0 +1,24 @@
+uuid: 66b99c67-db65-4caa-9cd8-fa64b8c35fed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.bike
+  module:
+    - text
+id: node.bike.body
+field_name: body
+entity_type: node
+bundle: bike
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

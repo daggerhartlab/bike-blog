@@ -1,0 +1,14 @@
+uuid: a7096150-5660-4ed3-8ae3-9a3e17c43c96
+langcode: en
+status: true
+dependencies: {  }
+id: photo
+label: Photo
+description: 'Photo type content'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name

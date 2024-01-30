@@ -1,0 +1,8 @@
+uuid: 0198977c-13f5-492e-aaa1-ef537d77bbd4
+langcode: en
+status: true
+dependencies: {  }
+name: Brand
+vid: brand
+description: 'Bike Brands'
+weight: 0
