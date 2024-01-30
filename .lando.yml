@@ -26,16 +26,16 @@ tooling:
     service: node
   node:
     service: node
-  theme-install:
-    service: node
-    cmd:
-      - cd /app/web/themes/custom/paintjob && npm ci
 
-  theme-build:
-    service: node
-    cmd:
-      - cd /app/web/themes/custom/paintjob && npx mix --production
-
-  theme-watch:
-    service: node
-    cmd: cd /app/web/themes/custom/paintjob && npx mix watch
+#  theme-install:
+#    service: node
+#    cmd:
+#      - cd /app/web/themes/custom/paintjob && npm ci
+#  theme-build:
+#    service: node
+#    cmd:
+#      - cd /app/web/themes/custom/paintjob && npx mix --production
+#
+#  theme-watch:
+#    service: node
+#    cmd: cd /app/web/themes/custom/paintjob && npx mix watch
