@@ -1,0 +1,22 @@
+uuid: 6ad090cd-030e-4287-986a-67496d5b4c86
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - paintjob
+_core:
+  default_config_hash: uHGQeXpjudF5HkwGniQ_zzUngqcc3iAzzE7fdjWJiyA
+id: paintjob_powered
+theme: paintjob
+region: sidebar_first
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

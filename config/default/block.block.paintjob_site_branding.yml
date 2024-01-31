@@ -1,0 +1,25 @@
+uuid: 989a69c7-f513-4cc2-9574-468fdb58df09
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - paintjob
+_core:
+  default_config_hash: lE5hyDUbMWVcRxvlVMAwguAJFBiZH2Xf-59wmBIq9co
+id: paintjob_site_branding
+theme: paintjob
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

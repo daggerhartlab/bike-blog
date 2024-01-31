@@ -1,0 +1,22 @@
+uuid: 16eb4e9f-c491-4a54-918c-eda685e3683e
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - paintjob
+_core:
+  default_config_hash: b6CHwczHyuqKRuf-Oi4zY6q-9HCsLyWRGkk8-reVCfk
+id: paintjob_help
+theme: paintjob
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

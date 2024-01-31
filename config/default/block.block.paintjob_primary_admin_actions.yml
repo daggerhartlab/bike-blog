@@ -1,0 +1,20 @@
+uuid: 4f1fef47-c527-41bb-8e0f-b4683ef6a2fd
+langcode: en
+status: true
+dependencies:
+  theme:
+    - paintjob
+_core:
+  default_config_hash: MY-b6RFbUcofefyaeI8uMqaPh2bJOasn2y1bvGVF4dw
+id: paintjob_primary_admin_actions
+theme: paintjob
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }
