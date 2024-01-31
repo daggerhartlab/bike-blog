@@ -1,0 +1,12 @@
+
+#navbar-main {
+  background-color: $main-background;
+  a.navbar-brand {
+    font-size: 25px;
+    color: $main-header-font-color;
+    display: flex;
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
