@@ -1,0 +1,22 @@
+uuid: a1e28ee4-21d8-40b6-b2d4-568972c3920d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - paintjob
+_core:
+  default_config_hash: IsKUlBAi-gl90iZ3w0OI3XZvSYDrtxg4nF1aDhfLWIA
+id: paintjob_primary_local_tasks
+theme: paintjob
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

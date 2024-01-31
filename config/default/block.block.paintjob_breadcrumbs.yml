@@ -1,0 +1,22 @@
+uuid: ee453adf-e6c0-4594-8208-bf6df86ba5e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - paintjob
+_core:
+  default_config_hash: xk8HAWIUZCzYFsUX2sNmTNDUxSoCdwrEI1tpTT5LW9s
+id: paintjob_breadcrumbs
+theme: paintjob
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }
