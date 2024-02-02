@@ -6,6 +6,8 @@ dependencies:
     - field.field.node.bike.body
     - field.field.node.bike.field_brand
     - field.field.node.bike.field_photo
+    - field.field.node.bike.field_year_end
+    - field.field.node.bike.field_year_start
     - image.style.medium
     - node.type.bike
   module:
@@ -42,6 +44,20 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 104
+    region: content
+  field_year_end:
+    type: number_unformatted
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_year_start:
+    type: number_unformatted
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
     region: content
   links:
     settings: {  }
