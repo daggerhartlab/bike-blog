@@ -93,12 +93,29 @@
       </div>
     {% endif %}
   </header>
+
   <div{{ content_attributes.addClass('node__content', 'clearfix', 'special_bike') }}>
+
     <div class="special_bike__left left-column">
-      {{ content.field_photo[0] }}
+      {{ content.field_photo }}
+
+      <div class="year-range  year-start--{{ node.field_year_start.value }}">
+        {{ content.field_year_start }}
+        -
+        {% if not content.field_year_end[0] %}
+          current
+        {% else %}
+          {{ content.field_year_end }}
+        {% endif %}
+      </div>
     </div>
     <div class="right-column">
-      {{ content|without("field_photo") }}
+      {{
+        content
+          | without("field_photo")
+          | without('field_year_start')
+          | without('field_year_end')
+      }}
     </div>
   </div>
 </article>
