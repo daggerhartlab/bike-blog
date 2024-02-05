@@ -6,6 +6,8 @@ dependencies:
     - field.field.node.bike.body
     - field.field.node.bike.field_brand
     - field.field.node.bike.field_photo
+    - field.field.node.bike.field_year_end
+    - field.field.node.bike.field_year_start
     - node.type.bike
   module:
     - path
@@ -49,6 +51,20 @@ content:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_year_end:
+    type: number
+    weight: 126
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_year_start:
+    type: number
+    weight: 125
+    region: content
+    settings:
       placeholder: ''
     third_party_settings: {  }
   path:
