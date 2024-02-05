@@ -7,6 +7,8 @@ dependencies:
     - field.field.node.bike.body
     - field.field.node.bike.field_brand
     - field.field.node.bike.field_photo
+    - field.field.node.bike.field_year_end
+    - field.field.node.bike.field_year_start
     - node.type.bike
   module:
     - text
@@ -32,3 +34,5 @@ content:
 hidden:
   field_brand: true
   field_photo: true
+  field_year_end: true
+  field_year_start: true

@@ -1,0 +1,23 @@
+uuid: d3d14f79-c03d-4884-a89c-4eecc05df50b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year_start
+    - node.type.bike
+id: node.bike.field_year_start
+field_name: field_year_start
+entity_type: node
+bundle: bike
+label: 'Year Start'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

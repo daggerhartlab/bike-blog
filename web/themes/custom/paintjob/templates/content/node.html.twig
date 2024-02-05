@@ -63,14 +63,14 @@
 
 {%
   set classes = [
-  'node',
-  'node--type-' ~ node.bundle|clean_class,
-  node.isPromoted() ? 'node--promoted',
-  node.isSticky() ? 'node--sticky',
-  not node.isPublished() ? 'node--unpublished',
-  view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-  'clearfix',
-]
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'clearfix',
+  ]
 %}
 <article{{ attributes.addClass(classes) }}>
   <header>
@@ -93,29 +93,7 @@
       </div>
     {% endif %}
   </header>
-
-  <div{{ content_attributes.addClass('node__content', 'clearfix', 'special_bike') }}>
-
-    <div class="special_bike__left left-column">
-      {{ content.field_photo }}
-
-      <div class="year-range  year-start--{{ node.field_year_start.value }}">
-        {{ content.field_year_start }}
-        -
-        {% if not content.field_year_end[0] %}
-          current
-        {% else %}
-          {{ content.field_year_end }}
-        {% endif %}
-      </div>
-    </div>
-    <div class="right-column">
-      {{
-        content
-          | without("field_photo")
-          | without('field_year_start')
-          | without('field_year_end')
-      }}
-    </div>
+  <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+    {{ content }}
   </div>
 </article>
