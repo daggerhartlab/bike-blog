@@ -1,0 +1,22 @@
+uuid: d4fa190f-61aa-4dbb-ae11-f5beab0c5ed4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: bike_alias
+label: 'Bike Alias'
+type: 'canonical_entities:node'
+pattern: 'bike/[node:field_brand]/[node:title]/[node:field_year_start:value]'
+selection_criteria:
+  af64c8b4-ac6d-4aff-9ea5-25745be88fe4:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: af64c8b4-ac6d-4aff-9ea5-25745be88fe4
+    context_mapping:
+      node: node
+    bundles:
+      bike: bike
+selection_logic: and
+weight: -5
+relationships: {  }

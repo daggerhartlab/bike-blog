@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Paintjob theme.
+ */
+
+
+function paintjob_preprocess_page_title(&$variables) {
+//  $node = \Drupal::routeMatch()->getParameter('node');
+//  if ($node && $node->bundle() === 'bike') {
+//    $brand = $node->get('field_brand');
+//    if (!$brand->isEmpty()) {
+//      $label = $brand->referencedEntities()[0]->label();
+//      $variables['title'] = t('@label @model', ['@label' => $label, '@model' => $node->label()]);
+//    }
+//  }
+}
+
+/**
+ * Implements THEME_preprocess_node().
+ */
+function paintjob_preprocess_node(&$variables) {
+  /* @var \Drupal\node\Entity\Node $node */
+  $node = $variables['node'];
+  $bundle = $node->bundle();
+  $preprocessor_function = '_paintjob_preprocess_' . $bundle . '_node';
+  if (function_exists($preprocessor_function)) {
+    $preprocessor_function($variables);
+  }
+}
+
+/**
+ * Preprocessor for Bike nodes.
+ *
+ * @param $variables
+ *
+ * @see paintjob_preprocess_node().
+ */
+function _paintjob_preprocess_bike_node(&$variables) {
+//  ksm($variables);
+
+}
