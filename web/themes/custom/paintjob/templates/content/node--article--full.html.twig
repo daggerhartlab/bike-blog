@@ -94,8 +94,10 @@
     {% endif %}
   </header>
   <div class="bikeblog-article full-width">
-    <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-      {{ content|without('comment') }}
+    <div class="container">
+      <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+        {{ content|without('comment') }}
+      </div>
     </div>
   </div>
   <div class="bikeblog-comments">
