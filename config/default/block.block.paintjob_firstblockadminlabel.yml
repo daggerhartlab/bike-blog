@@ -1,0 +1,21 @@
+uuid: aaec23e1-6731-4734-a270-afe8a7b8f516
+langcode: en
+status: true
+dependencies:
+  module:
+    - bmx_bikes
+  theme:
+    - paintjob
+id: paintjob_firstblockadminlabel
+theme: paintjob
+region: content
+weight: 0
+provider: null
+plugin: first_block_exmaple
+settings:
+  id: first_block_exmaple
+  label: 'First Block Admin Label'
+  label_display: visible
+  provider: bmx_bikes
+  reverse_string: 1
+visibility: {  }
