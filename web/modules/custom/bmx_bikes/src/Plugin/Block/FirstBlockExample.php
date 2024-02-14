@@ -16,6 +16,9 @@ use Drupal\Core\Form\FormStateInterface;
  */
 class FirstBlockExample extends BlockBase {
 
+  /**
+   * {@inheritdoc}
+   */
   public function build() {
     $config = $this->getConfiguration();
     $string = 'This works!';
@@ -42,9 +45,7 @@ class FirstBlockExample extends BlockBase {
   }
 
   public function blockSubmit($form, FormStateInterface $form_state) {
-    $config = $this->getConfiguration();
-    $config['reverse_string'] = $form_state->getValue('reverse_string');
-    $this->setConfiguration($config);
+    $this->configuration['reverse_string'] = $form_state->getValue('reverse_string');
   }
 
 }

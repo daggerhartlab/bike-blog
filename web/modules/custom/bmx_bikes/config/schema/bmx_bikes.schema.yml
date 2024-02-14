@@ -1,0 +1,15 @@
+block.settings.bmx_bikes_third_block_example:
+  type: block_settings
+  label: 'Third Block Example block'
+  mapping:
+    example:
+      type: string
+      label: Example
+
+field.formatter.settings.bmx_bikes_only_one_photo_please:
+  type: mapping
+  label: Only One Photo Please formatter settings
+  mapping:
+    foo:
+      type: string
+      label: Foo
