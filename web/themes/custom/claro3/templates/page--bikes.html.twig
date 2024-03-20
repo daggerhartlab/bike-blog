@@ -40,9 +40,6 @@
  */
 #}
 
-{# Show the context available to this template with the dump() function. #}
-{# {{ dump() }} #}
-
   <header class="content-header clearfix">
     <div class="layout-container">
       {{ page.breadcrumb }}
@@ -57,7 +54,9 @@
   <div class="layout-container">
     {{ page.pre_content }}
 
-    <div style="display: flex;">
+    <div>
+      <h1>This template overrides the page template for the View with the machine name "bikes"</h1>
+
       <main class="page-content clearfix" role="main">
 
         <div class="visually-hidden"><a id="main-content" tabindex="-1"></a></div>
@@ -69,7 +68,6 @@
         {% endif %}
         {{ page.content }}
       </main>
-
     </div>
 
     <footer>

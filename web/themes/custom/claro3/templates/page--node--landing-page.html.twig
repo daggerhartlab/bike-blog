@@ -40,9 +40,6 @@
  */
 #}
 
-{# Show the context available to this template with the dump() function. #}
-{# {{ dump() }} #}
-
   <header class="content-header clearfix">
     <div class="layout-container">
       {{ page.breadcrumb }}
@@ -59,6 +56,8 @@
 
     <div style="display: flex;">
       <main class="page-content clearfix" role="main">
+
+        <h1>This template is used when the page is for a "landing_page" node type.</h1>
 
         <div class="visually-hidden"><a id="main-content" tabindex="-1"></a></div>
         {{ page.highlighted }}

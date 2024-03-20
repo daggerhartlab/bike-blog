@@ -40,9 +40,6 @@
  */
 #}
 
-{# Show the context available to this template with the dump() function. #}
-{# {{ dump() }} #}
-
   <header class="content-header clearfix">
     <div class="layout-container">
       {{ page.breadcrumb }}
@@ -58,7 +55,27 @@
     {{ page.pre_content }}
 
     <div style="display: flex;">
+      {% if page.sidebar_first %}
+        <div>
+          {{ page.sidebar_first }}
+        </div>
+      {% endif %}
+
       <main class="page-content clearfix" role="main">
+
+        <h1>This template is used when the page has sidebars.</h1>
+
+        <ul>
+          {% for my_node in list_of_nodes %}
+            <li>
+              {{ my_node.id() }} - {{ my_node.label() }}
+              <br>
+              Start: {{ my_node.field_year_start.value }}<br>
+              End: {{ my_node.field_year_end.value }}
+              <hr>
+            </li>
+          {% endfor %}
+        </ul>
 
         <div class="visually-hidden"><a id="main-content" tabindex="-1"></a></div>
         {{ page.highlighted }}
@@ -70,6 +87,11 @@
         {{ page.content }}
       </main>
 
+      {% if page.sidebar_first %}
+        <div>
+          {{ page.sidebar_second }}
+        </div>
+      {% endif %}
     </div>
 
     <footer>

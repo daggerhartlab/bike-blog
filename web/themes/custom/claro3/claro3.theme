@@ -14,3 +14,20 @@ function claro3_preprocess_page(&$variables) {
     'type' => 'bike',
   ]);
 }
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function claro3_theme_suggestions_page_alter(array &$suggestions, array &$variables) {
+  if ($variables['page']['sidebar_first'] || $variables['page']['sidebar_second']) {
+    $suggestions[] = 'page__with_sidebars';
+  }
+
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node) {
+    $suggestions[] = 'page__node__' . $node->bundle();
+  }
+
+  //dump($variables);
+  //dump($suggestions);
+}
