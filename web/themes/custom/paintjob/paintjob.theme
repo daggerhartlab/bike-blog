@@ -41,3 +41,5 @@ function _paintjob_preprocess_bike_node(&$variables) {
 //  ksm($variables);
 
 }
+
+function paintjob_themeasdasdasdad() {}

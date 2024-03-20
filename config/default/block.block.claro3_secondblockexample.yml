@@ -1,0 +1,20 @@
+uuid: 89f1b37e-32a9-41b2-a8bb-1ad4b6ce0f53
+langcode: en
+status: true
+dependencies:
+  module:
+    - bmx_bikes
+  theme:
+    - claro3
+id: claro3_secondblockexample
+theme: claro3
+region: sidebar_first
+weight: 0
+provider: null
+plugin: bmx_bikes_second_block_example
+settings:
+  id: bmx_bikes_second_block_example
+  label: 'Second Block Example'
+  label_display: visible
+  provider: bmx_bikes
+visibility: {  }

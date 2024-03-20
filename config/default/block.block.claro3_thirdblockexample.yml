@@ -1,0 +1,21 @@
+uuid: 75bad060-a02b-4625-ba91-d30d409f9f81
+langcode: en
+status: true
+dependencies:
+  module:
+    - bmx_bikes
+  theme:
+    - claro3
+id: claro3_thirdblockexample
+theme: claro3
+region: sidebar_second
+weight: 0
+provider: null
+plugin: bmx_bikes_third_block_example
+settings:
+  id: bmx_bikes_third_block_example
+  label: 'Third Block Example'
+  label_display: visible
+  provider: bmx_bikes
+  example: 'Hello world!'
+visibility: {  }
