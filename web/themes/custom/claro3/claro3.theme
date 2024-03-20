@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function claro3_preprocess_page(&$variables) {
+  $variables['my_list'] = [
+    'one' => 'First',
+    'two' => 'Second',
+    'three' => 'Third',
+  ];
+
+  $variables['list_of_nodes'] = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties([
+    'type' => 'bike',
+  ]);
+}

@@ -1,0 +1,20 @@
+uuid: f09b71f2-30aa-4b43-9345-57a1e5635153
+langcode: en
+status: true
+dependencies:
+  theme:
+    - claro3
+_core:
+  default_config_hash: MY-b6RFbUcofefyaeI8uMqaPh2bJOasn2y1bvGVF4dw
+id: claro3_primary_admin_actions
+theme: claro3
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: fe9bca3a-d4f7-4b28-bf5a-1890ba561de3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - claro3
+_core:
+  default_config_hash: UnALXKN9BfRPollIjAI9kSu6YpvuB6zhseorFtN2xW8
+id: claro3_account_menu
+theme: claro3
+region: secondary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: 07c30017-5f7a-49f9-8918-820aa3307b81
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.bikes
+  module:
+    - system
+    - views
+  theme:
+    - claro3
+id: claro3_views_block__bikes_block_1
+theme: claro3
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:bikes-block_1'
+settings:
+  id: 'views_block:bikes-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

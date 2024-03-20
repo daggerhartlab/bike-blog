@@ -1,0 +1,4 @@
+name: Claro 3.0
+type: theme
+base theme: claro
+core_version_requirement: ^10

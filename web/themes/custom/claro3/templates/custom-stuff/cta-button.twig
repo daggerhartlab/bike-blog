@@ -1,0 +1,15 @@
+{#
+
+  Variables:
+  - url: Link url.
+  - text: Link text.
+  - button_style: "primary", "success", "danger", "warning".
+  - icon_url: Url for a button icon.
+#}
+<a href="{{ url }}" class="button button--{{ button_style }}">
+  {% if icon_url %}
+    <img src="{{ icon_url }}" style="width: 50px; height: 50px;">
+  {% endif %}
+
+  <span>{{ text }}</span>
+</a>

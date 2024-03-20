@@ -1,0 +1,21 @@
+uuid: ba38e1b7-e826-4782-a6b9-67fe0f3776fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - bmx_bikes
+  theme:
+    - claro3
+id: claro3_firstblockadminlabel
+theme: claro3
+region: content
+weight: 0
+provider: null
+plugin: first_block_exmaple
+settings:
+  id: first_block_exmaple
+  label: 'First Block Admin Label'
+  label_display: visible
+  provider: bmx_bikes
+  reverse_string: 1
+visibility: {  }
