@@ -1,0 +1,15 @@
+stylez:
+  css:
+    theme:
+      css/stylez.css: {}
+
+node--bike:
+  css:
+    component:
+      components/bike/node--bike.css: {}
+  js:
+    components/bike/node--bike.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
